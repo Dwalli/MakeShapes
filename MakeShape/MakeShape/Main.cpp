@@ -4,7 +4,11 @@
 
 int main()
 {
+	glfwInit();
 
-	
+
+
+
+	glfwTerminate();
 	return 0;
 }
