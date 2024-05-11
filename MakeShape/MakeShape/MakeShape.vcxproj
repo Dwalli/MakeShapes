@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e2ef8af9-1c17-4b63-a87b-d4da9332e8a5}</ProjectGuid>
-    <RootNamespace>MakwShapes</RootNamespace>
+    <ProjectGuid>{3d8cf778-dda1-4be6-bef5-f9f14888e2b3}</ProjectGuid>
+    <RootNamespace>MakeShape</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -71,12 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>G:\Temp games\Game Flickmiss\MakeShapes\MakwShapes\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>G:\Temp games\Game Flickmiss\MakeShapes\MakwShapes\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>G:\Temp games\Game Flickmiss\MakeShapes\MakeShape\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Temp games\Game Flickmiss\MakeShapes\MakeShape\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>G:\Temp games\Game Flickmiss\MakeShapes\MakwShapes\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>G:\Temp games\Game Flickmiss\MakeShapes\MakwShapes\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>G:\Temp games\Game Flickmiss\MakeShapes\MakeShape\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Temp games\Game Flickmiss\MakeShapes\MakeShape\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
