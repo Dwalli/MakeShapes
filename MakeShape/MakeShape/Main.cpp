@@ -47,15 +47,20 @@ int main()
 	gladLoadGL();
 	glViewport(0, 0, 800, 800);
 
+	// create shader object from using default.vert and defualt.frag
 	Shader shaderProgram("Default.vert", "Default.frag");
 
+	// generate vertex array and binds them
 	VAO VAO1;
 	VAO1.Bind();
 
+	// makes the buffer objects and links it to the vertices/indices
 	VBO VBO1(vertices, sizeof(vertices));
 	EBO EBO1(indices, sizeof(indices));
 
 	VAO1.LinkVBO(VBO1, 0);
+
+	// unbined them to provent unwanted changes
 	VAO1.Unbind();
 	VBO1.Unbind();
 	EBO1.Unbind();

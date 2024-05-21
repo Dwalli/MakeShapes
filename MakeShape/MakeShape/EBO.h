@@ -6,7 +6,7 @@
 class EBO
 {
 public:
-	GLuint ID;
+	GLuint ID;  // ID for the Elements buffer Object
 	EBO(GLuint* indices, GLsizeiptr size);
 
 	void Bind();

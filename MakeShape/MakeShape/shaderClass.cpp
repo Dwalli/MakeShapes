@@ -1,5 +1,6 @@
 #include "shaderClass.h"
 
+// build the shader program from 2 diffrent shaders
 Shader::Shader(const char* fragFile, const char* vertFile)
 {
     std::string vertexCode = get_file_contents(vertFile);
@@ -26,6 +27,8 @@ Shader::Shader(const char* fragFile, const char* vertFile)
     glDeleteShader(fragmentShader);
 }
 
+
+// read the files 
 std::string Shader::get_file_contents(const char* filename)
 {
     std::ifstream in(filename, std::ios::in | std::ios::binary);
@@ -51,3 +54,4 @@ void Shader::OnActivate()
 {
     glUseProgram(ID);
 }
+,
