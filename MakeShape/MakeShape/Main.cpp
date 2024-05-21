@@ -19,16 +19,16 @@ int main()
 
 	GLfloat vertices[] = { // vertices coordiants
 
-		 0.5f,  0.5f, 0.0f,  // top right
-		 0.5f, -0.5f, 0.0f,  // bottom right
-		-0.5f, -0.5f, 0.0f,  // bottom left
-		-0.5f,  0.5f, 0.0f   // top left 
+		// positions         // colors
+		 0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // bottom right
+		-0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // bottom left
+		 0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // top 
 	};
 
 	GLuint indices[] = { // orders of indices
 
 		0, 1, 3,   // first triangle
-		1, 2, 3    // second triangle
+	//	1, 2, 3    // second triangle
 
 	};
 
@@ -58,7 +58,8 @@ int main()
 	VBO VBO1(vertices, sizeof(vertices));
 	EBO EBO1(indices, sizeof(indices));
 
-	VAO1.LinkVBO(VBO1, 0);
+	VAO1.LinkAttribute(VBO1, 0, 3, GL_FLOAT, 6 * sizeof(float), (void*)0);
+	VAO1.LinkAttribute(VBO1, 0, 3, GL_FLOAT, 6 * sizeof(float), (void*)(3 * sizeof(float)));
 
 	// unbined them to provent unwanted changes
 	VAO1.Unbind();
@@ -71,7 +72,7 @@ int main()
 		// take care of all events
 	
 		// change the colors
-		glClearColor(0.56f, 0.23f, 0.78f, 1.0f);
+		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		shaderProgram.OnActivate();

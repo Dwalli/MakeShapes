@@ -54,4 +54,3 @@ void Shader::OnActivate()
 {
     glUseProgram(ID);
 }
-,
