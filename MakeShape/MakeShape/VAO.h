@@ -10,7 +10,7 @@ public:
 	GLuint ID; // ID for the Vertex Array Object
 	VAO();
 
-	void LinkAttribute(VBO& VBO, GLuint layout,GLuint numComponents, GLenum type, GLsizeiptr stride, void* offset);
+	void LinkAttribute(VBO& VBO, GLuint layout, GLuint numComponents, GLenum type, GLsizeiptr stride, void* offset);
 	void Bind();
 	void Unbind();
 	void Delete();
