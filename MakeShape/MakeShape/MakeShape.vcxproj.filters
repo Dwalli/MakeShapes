@@ -16,6 +16,9 @@
     <Filter Include="Resource Files\Shader">
       <UniqueIdentifier>{0c910929-20cd-4a5c-8679-47abe53abc87}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Images">
+      <UniqueIdentifier>{aaed7a9e-1c55-4fec-890b-9634c9f83d26}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\glad.c">
@@ -37,6 +40,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -61,5 +67,16 @@
     <ClInclude Include="VAO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OIG.jpeg">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="OIG_3.jpeg">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
   </ItemGroup>
 </Project>
